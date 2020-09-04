@@ -23,7 +23,7 @@
 <script type="text/javascript">
   function enterS(){
     if(document.getElementById("myText").value==="zzz"){
-    	document.getElementById("res").innerHtml="سلاااام<br/> خوبی<br/> اینجا می نویسم برات که میام....<br/>دوست دارم..."
+    	document.getElementById("res").innerHTML="سلاااام<br/> خوبی<br/> اینجا می نویسم برات که میام....<br/>دوست دارم..."
     }
 	  else{
 	  alert("شناسه وارد شده اشتباه است")
@@ -31,16 +31,16 @@
   }
 </script>
 <div style="position:absolute;left:0;top:40%;width:100%;text-align:center">
-	<div style="width:300px;margin:0 auto;background:rgba(255,255,255,0.7);padding:5px;border-radius:5px;border:solid 1px silver">
+	<div style="width:300px;margin:0 auto;background:rgba(255,255,255,0.7);padding:20px;border-radius:5px;border:solid 1px silver">
   <h3>شناسه آفر را وارد کنید</h3>
 	<div class="input-group mb-3">
-  <input type="text" id="myText" class="form-control" />
+  <input type="text" id="myText" class="form-control"  autocomplete="off" />
   <div class="input-group-append">
     <button class="btn btn-primary" onclick="enterS()">ثبت</button>
   </div>
 		</div>
 </div>
-  <div id="res"></div>
+  <h3 id="res"></h3>
 </div>
 
 <img style="width:100%;height:100%" src='https://github.com/IrNowUsers/offer/blob/master/newwallpaper.jpg?raw=true'>
