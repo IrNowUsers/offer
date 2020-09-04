@@ -21,7 +21,7 @@
 <script type="text/javascript">
   function enterS(){
     if(document.getElementById("myText").value==="zzz"){
-    alert("OO")
+    	document.getElementById("myText").innerText="سلاااام. خوبی. اینجا می نویسم برات که میام...."
     }
   }
 </script>
@@ -29,6 +29,7 @@
   <h3>شناسه آفر را وارد کنید</h3>
   <span>ورود با:</span><input type="text" id="myText" class="form-control" />&nbsp;
   <button class="btn btn-primary" onclick="enterS()">ثبت</button>
+  <div id="res"></div>
 </div>
 
 <img style="width:100%;height:100%" src='https://github.com/IrNowUsers/offer/blob/master/wallpaper.jpg?raw=true'>
