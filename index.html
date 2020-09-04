@@ -1,11 +1,13 @@
 <script type="text/javascript">
-  function enterS(e){
-    console.log(e)
+  function enterS(){
+    if(document.getElementById("myText").value==="zzz"){
+    alert("OO")
+    }
   }
 </script>
 <div style="position:absolute;left:40%;top:45%">
   <h3>شناسه آفر را وارد کنید</h3>
-  <span>ورود با:</span><input type="text" />&nbsp;
+  <span>ورود با:</span><input type="text" id="myText" />&nbsp;
   <button onclick="enterS()">ثبت</button>
 </div>
 
